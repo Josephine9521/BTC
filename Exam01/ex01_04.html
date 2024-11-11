@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex01_04 form tag</title>
+  </head>
+  <body>
+    <a href="/index.html">Home</a>
+    <!-- form 은 항상 input 을 사용해야한다 -->
+    <!-- form tag 내 input type 중 submit( : 제출) 중요 -->
+    <fieldset>
+      <legend>이름 양식</legend>
+      <form action="myform" method="GET">
+        <label for="firstName">First name : </label>
+        <input
+          type="text"
+          name="firstName"
+          id="First-Name"
+          placeholder="이름"
+        /><br />
+
+        <label for="lastName">Last name : </label>
+        <input
+          type="text"
+          name="lastName"
+          id="Last-Name"
+          placeholder="성"
+          required
+        /><br />
+
+        <label for="age"> Age : </label>
+        <input
+          type="number"
+          name="number"
+          id="Age"
+          min="12"
+          max="20"
+          step="2"
+          value="18"
+        /><br />
+
+        <label for="checkbox1">Checkbox1 : </label>
+        <input type="checkbox" name="ch1" /><br />
+
+        <label for="checkbox2">Checkbox2 : </label>
+        <input type="checkbox" name="ch2" checked /><br />
+
+        <label for="radio1">Radio1 : </label>
+        <input type="radio" name="tip" value="ok1" checked /><br />
+
+        <label for="radio2">Radio2 : </label>
+        <input type="radio" name="tip" value="ok2" /><br />
+
+        <label for="radio2">Radio3 : </label>
+        <input type="radio" name="map" value="ok3" /><br />
+
+        <label for="radio2">Radio4 : </label>
+        <input type="radio" name="map" value="ok4" /><br />
+
+        <label for="password">Password : </label>
+        <input type="password" /><br />
+
+        <label for="date">Date : </label>
+        <input type="date" /><br />
+
+        <label for="time">Time : </label>
+        <input type="time" /><br />
+
+        <label for="datetime-local">Date time : </label>
+        <input type="datetime-local" /><br />
+
+        <label for="file">File : </label>
+        <input type="file" /><br />
+        <hr />
+
+        <label for="hide">숨김 : </label>
+        <input type="hidden" name="외모" value="handsome" /><br />
+        <hr />
+
+        <input type="submit" value="보내기" />
+        <input type="reset" value="클리어" />
+        <hr />
+
+        <button type="submit">제출</button>
+        <button type="reset">지움</button>
+      </form>
+    </fieldset>
+  </body>
+</html>

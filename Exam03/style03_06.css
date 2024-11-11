@@ -1,0 +1,38 @@
+/*
+* {
+  background-color: pink;
+}
+*/
+html,
+body {
+  height: 100%;
+}
+@media (max-width: 1200px) {
+  body {
+    color: white;
+    background: url(https://img.freepik.com/premium-vector/realistic-blue-sky-background-0609_1228651-11.jpg?semt=ais_hybrid);
+  }
+  h1 {
+    border-bottom: 1px solid black;
+    padding: 10px;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    color: white;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR78TBr7dJkIHTSM3kVEXHiwtekgcJoqEtQaA&s)
+      no-repeat;
+    background-size: cover;
+  }
+}
+h1 {
+  border-bottom: 1px solid white;
+  padding: 10px;
+}
+h1 {
+  border-bottom: 1px solid white;
+  padding: 10px;
+}
+span {
+  padding: 5px;
+}
